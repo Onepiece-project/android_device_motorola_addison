@@ -16,13 +16,16 @@
 
 $(call inherit-product, device/motorola/addison/full_addison.mk)
 
+# Boot animation
+TARGET_SCREEN_WIDTH := 1080
+TARGET_SCREEN_HEIGHT := 1920
+
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := addison
-PRODUCT_NAME := aosp_addison
+PRODUCT_MODEL := Moto Z Play
+PRODUCT_NAME := gzosp_addison
 PRODUCT_BRAND := motorola
 PRODUCT_MANUFACTURER := motorola
-
-PRODUCT_SYSTEM_PROPERTY_BLACKLIST := ro.product.model
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     BUILD_FINGERPRINT=motorola/addison/addison:7.1.1/NPNS26.118-22-1/1:user/release-keys \
